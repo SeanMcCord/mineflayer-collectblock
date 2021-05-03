@@ -265,6 +265,7 @@ export class CollectBlock {
   constructor (bot: Bot) {
     this.bot = bot
     this.targets = new Targets(bot)
+    // @ts-expect-error
     this.movements = new Movements(bot, mcDataLoader(bot.version))
   }
 
